@@ -64,8 +64,12 @@ export const createProgram = (): Command => {
             PGPASSWORD                     password to be used if the server demands password authentication
 
           Example call:
-            $ PGPASSWORD=<password> npx pg-mermaid --dbname <dbname> --username <username>
+            $ PGPASSWORD=<password> npx pg-mermaid-hc --dbname <dbname> --username <username>
         `
+    )
+    .option(
+      '--mermaid-only <mermaidOnly>',
+      'Whether to skip the markdown header and index listings'
     );
 
   return program;
@@ -81,6 +85,7 @@ export const getOptions = ({
     dbname: z.string(),
     excludedTables: z.union([z.string().array(), z.undefined()]),
     host: z.string(),
+    mermaidOnly: z.coerce.boolean(),
     outputPath: z.string(),
     password: z.string(),
     port: z.coerce.number(),

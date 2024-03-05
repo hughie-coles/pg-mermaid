@@ -10,6 +10,7 @@ it('should not throw error when options are valid', () => {
   const schema = 'schema';
   const outputPath = 'outputPath';
   const excludedTables = ['excludedTable1', 'excludedTable2'];
+  const mermaidOnly = false;
 
   const program = createProgram();
   program.parse([
@@ -31,6 +32,8 @@ it('should not throw error when options are valid', () => {
     outputPath,
     '--excluded-tables',
     ...excludedTables,
+    '--mermaid-only',
+    ''
   ]);
 
   // When
@@ -41,6 +44,7 @@ it('should not throw error when options are valid', () => {
     dbname,
     excludedTables,
     host,
+    mermaidOnly,
     outputPath,
     password,
     port: 2_345,

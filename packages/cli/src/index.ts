@@ -22,6 +22,7 @@ export const main = async () => {
     port,
     schema,
     username,
+    mermaidOnly
   } = getOptions();
 
   const connection = await createConnection({
@@ -44,13 +45,12 @@ export const main = async () => {
 
   const markdown = generateMarkdown({ diagram, indexes });
 
-  await fs.writeFile(outputPath, markdown);
-  console.log(
-    `Diagram was generated successfully at '${path.join(
-      process.cwd(),
-      outputPath
-    )}'`
-  );
+  if(mermaidOnly === true){
+    await fs.writeFile(outputPath, diagram);  
+  }
+  else{
+    await fs.writeFile(outputPath, markdown);
+  }
 
   await connection.end();
 };

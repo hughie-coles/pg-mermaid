@@ -6,7 +6,7 @@ const generateEntity = (entity: Entity) => {
   for (const attribute of entity.attributes) {
     const { comment, key, name, type } = attribute;
     mermaid.push(
-      `        ${name} ${type}${key ? ` ${key} ` : ' '}"${comment}"`
+      `        ${name.replaceAll(/[^A-Z_a-z-]/gu, '')} ${type}${key ? ` ${key} ` : ' '}"${comment}"`
     );
   }
 
