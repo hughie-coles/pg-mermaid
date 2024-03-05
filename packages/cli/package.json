@@ -1,5 +1,5 @@
 {
-  "name": "pg-mermaid",
+  "name": "pg-mermaid-hc",
   "version": "0.2.1",
   "description": "Mermaid diagram generator for PostgreSQL database schema",
   "keywords": [
@@ -10,9 +10,9 @@
     "postgres",
     "postgresql"
   ],
-  "bugs": "https://github.com/bastiensun/pg-mermaid/issues",
+  "bugs": "https://github.com/hughie-coles/pg-mermaid-hc/issues",
   "repository": {
-    "url": "github:bastiensun/pg-mermaid",
+    "url": "github:hughie-coles/pg-mermaid-hc",
     "directory": "packages/cli"
   },
   "license": "AGPL-3.0-only",

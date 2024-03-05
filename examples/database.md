@@ -1,6 +1,6 @@
 > **Note**
 >
-> Example of a markdown file generated with `pg-mermaid` from a PostgreSQL schema (cf. [schema.sql](schema.sql)).
+> Example of a markdown file generated with `pg-mermaid-hc` from a PostgreSQL schema (cf. [schema.sql](schema.sql)).
 
 ---
 

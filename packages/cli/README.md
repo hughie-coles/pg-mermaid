@@ -1,4 +1,4 @@
-# 🐘 `pg-mermaid`
+# 🐘 `pg-mermaid-hc`
 
 `Mermaid` diagram generator for `PostgreSQL` database schema.
 
@@ -14,11 +14,11 @@
 ## Usage
 
 ```shell
-npx pg-mermaid --help
+npx pg-mermaid-hc --help
 ```
 
 ```
-Usage: pg-mermaid [options]
+Usage: pg-mermaid-hc [options]
 
 Options:
   -d, --dbname <dbname>          database name to connect to
@@ -37,9 +37,9 @@ Environment variables:
 ### Example call
 
 ```shell
- PGPASSWORD=<password> npx pg-mermaid --dbname <dbname> --username <username>
+ PGPASSWORD=<password> npx pg-mermaid-hc --dbname <dbname> --username <username>
 ```
 
 ### Example result
 
-cf. [examples/database.md](https://github.com/bastiensun/pg-mermaid/blob/main/examples/database.md)
+cf. [examples/database.md](https://github.com/hughie-coles/pg-mermaid-hc/blob/main/examples/database.md)

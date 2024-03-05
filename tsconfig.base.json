@@ -10,12 +10,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2021", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "pg-mermaid": ["packages/cli/src/index.ts"]
+      "pg-mermaid-hc": ["packages/cli/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "pg-mermaid",
+  "npmScope": "pg-mermaid-hc",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
